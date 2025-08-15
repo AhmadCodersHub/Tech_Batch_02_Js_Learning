@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Add Candidate
+        </title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                /* text-align: center; */
+            }
+
+            body {
+                background-color: brown;
+                padding-bottom: 500px;
+            }
+
+            h1 {
+                color: white;
+                margin-left: 55px; 
+                margin-top: 20px;
+            }
+
+            .form-container {
+                width: 280px;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            form {
+                background-color: white;
+                border: none;
+                border-radius: 6px;
+                padding: 15px;
+                padding-top: 20px;
+            }
+
+            .input-title {
+                font-size: 12px;
+                font-weight: bold;
+                margin-bottom: 3px;
+                margin-top: 15px;
+            }
+
+            .licence-input {
+                width: 100%;
+                height: 30px;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 2px;
+                border-color: rgb(208, 207, 207);
+                padding-left: 8px;
+            }
+
+            .licence-input:focus {
+                outline: none;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 2px;
+                border-color: brown;
+            }
+
+            .input-info {
+                font-size: 9px;
+                color: rgb(110, 110, 110);
+                margin-top: 1px;
+            }
+
+
+            input[type="date"] {
+                padding-right: 8px;
+            }
+
+            .save-btn {
+                width: 100%;
+                height: 30px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                background-color: brown;
+                border: none;
+                border-radius: 2px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .save-btn:hover {
+                background-color: rgb(130, 26, 26);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Add Candidate
+        </h1>
+        <div class="form-container">
+            <form>
+                <p class="input-title">
+                    Licence Number:
+                </p>
+                <input class="licence-input" type="text" maxlength="14" required>
+                <p class="input-info">It is really important you get this correct, please double check.</p>
+
+                <p class="input-title">
+                    Theory Number:
+                </p>
+                <input class="licence-input" type="text" maxlength="9" required>
+                <p class="input-info">Always add if you have it.</p>
+                
+                <p class="input-title">
+                    Earliest Test Date:
+                </p>
+                <input class="licence-input" type="date" required>
+                <p class="input-info">This must be at least 10 WORKING DAYS gap after a previous test.</p>
+                
+                <p class="input-title">
+                    Which Centres Should We Search For:
+                </p>
+                <input class="licence-input" type="text" maxlength="9" placeholder="Type to search for test centres..." required>
+
+                <button class="save-btn">
+                    Save
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

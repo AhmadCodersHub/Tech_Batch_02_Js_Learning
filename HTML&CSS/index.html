@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNX - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .container h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container p {
+            margin: 5px 0;
+        }
+
+        .login-section {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-section h2 {
+            color: #9e1b32; /* Updated to match the dashboard red */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px; 
+        }
+
+        .login-btn {
+            background-color: #9e1b32; /* Updated to match the dashboard red */
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .login-btn:hover {
+            background-color: #b71c1c;
+        }
+
+    </style>
+    <script>
+        function login(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Sample login credentials
+            const correctEmail = "ali123@gmail.com";
+            const correctPassword = "ali123";
+
+            // Get the email and password entered by the user
+            const enteredEmail = document.getElementById('email').value;
+            const enteredPassword = document.getElementById('password').value;
+
+            // Check if the entered email and password match the correct ones
+            if (enteredEmail === correctEmail && enteredPassword === correctPassword) {
+                // Redirect to dashboard.html
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <section class="login-section">
+            <h2>SIGN IN TO YOUR ACCOUNT</h2>
+            <form onsubmit="login(event)">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="login-btn">Sign In</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

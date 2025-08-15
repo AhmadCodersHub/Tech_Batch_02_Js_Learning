@@ -1,0 +1,102 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .facebook-logo {
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    .login-title {
+        font-size: 16px;
+        margin-left: 110px;
+        margin-bottom: 15px;
+    }
+
+    .password-input,
+    .email-input {
+        font-size: 16px;
+        height: 35px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+        width: 250px;
+    }
+
+    .password-input::placeholder,
+    .email-input::placeholder {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(152, 151, 151);
+    }
+
+    .login-btn {
+        background-color: rgb(43, 102, 252);
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        padding-left: 102px;
+        padding-right: 102px;
+        margin-left: 60px;
+        height: 35px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+        margin-bottom: 20px;
+    }
+
+    .login-btn:hover {
+        background-color: rgb(17, 80, 239);
+
+    }
+
+    .forgot-info {
+        color: rgb(43, 102, 252);
+        font-size: 8px;
+    }
+
+    .sign-up,
+    .forgot-account {
+        font-size: 12px;
+        color: rgb(43, 102, 252);
+        text-decoration: none;
+        margin-left: 70px;
+        margin-right: 2px;
+    }
+
+    .sign-up {
+        margin-left: 2px;
+    }
+
+    .forgot-account:hover,
+    .sign-up:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<img class="facebook-logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg">
+
+<p class="login-title">
+    Log in to Facebook
+</p>
+
+<input class="email-input" type="email" placeholder="enter your email">
+<h1></h1>
+<input class="password-input" type="password" placeholder="enter you password" minlength="8" maxlength="16">
+<h1></h1>
+<button class="login-btn">
+    Log In
+</button>
+<p class="forgot-info">
+    <a class="forgot-account" href="https://www.facebook.com/recover/initiate/?ars=facebook_login&cancel_lara_pswd=0"
+        target="_blank">Forgotten account?</a>
+    &#8226;
+    <a class="sign-up" href="https://www.facebook.com/r.php?locale=en_GB&display=page" target="_blank">Sign up for
+        Facebook</a>
+</p>

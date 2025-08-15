@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Daraz
+        </title>
+        <style>
+            body {
+                padding-bottom: 5000px;
+            }
+
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            .header {
+                background-color: rgb(255, 87, 26);
+                height: 100px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                /* justify-content: center; */
+                flex-direction: column;
+            }
+
+            .first-part {
+                /* background-color: rgb(0, 85, 255); */
+                display: flex;
+                flex-direction: row;
+                align-items: center; 
+                justify-content: end;
+                margin-right: 40px;
+            }
+
+            .first-part-container a {
+                text-decoration: none;
+                color: white;
+                font-size: 10px;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+
+            .first-part-container:hover a {
+                opacity: 0.8;
+            }
+
+            .second-part {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 5px;
+            }
+
+            
+            .second-part-continer-2,
+            .second-part-continer-1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .second-part-continer-1 {
+                margin-right: 40px;
+            }
+
+            .second-part-continer-1 img {
+                width: 90px;
+                cursor: pointer;
+            }
+
+            .search-bar {
+                outline: none;
+                border: none;
+                border-radius: 1px;
+                width: 400px;
+                height: 30px;
+                padding-left: 14px;
+                font-size: 10px;
+                
+            }
+
+            .search-bar::placeholder {
+                color: rgb(170, 168, 168);
+            }
+
+            .search-btn {
+                height: 30px;
+                width: 35px;
+                border: none;
+                margin-left: -1px;
+                border-radius: 1px;
+                background-color: rgb(255, 213, 197);
+                cursor: pointer;
+            }
+
+            .search-logo {
+                margin-top: 3px;
+                width: 15px;
+            }
+
+            .second-part-continer-3 {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                margin-left: 20px;
+            }
+
+
+
+            .add-to-cart-logo {
+                margin-top: 15px;
+                width: 20px;
+            }
+
+            .third-part {
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+                margin-left: -39px;
+            }
+
+            .third-part-container {
+                display: flex;
+                align-items: center;
+                /* margin-right: 10px; */
+                justify-content: center;
+                
+            }
+
+            .third-part-container a {
+                font-size: 10px;
+                text-decoration: none;
+                color: white;
+            }
+
+            .third-part-container:hover a {
+                opacity: 0.8;
+            }
+
+            .third-part-container span {
+                font-size: 9px;
+                margin-left: 5px;
+                margin-right: 5px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="first-part">
+                <div class="first-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.tm80335142.search.2.35e34076hiC4Yr&q=car&_keyori=ss&from=search_history&sugg=car_0_1" target="_blank">SAVE MORE ON APP</a>
+                </div>
+                <div class="first-part-container">
+                    <a href="https://pages.daraz.pk/wow/gcp/route/daraz/pk/upr/router?spm=a2a0e.searchlist.header.sell_on.24d71a41KDeybG&hybrid=1&data_prefetch=true&prefetch_replace=1&at_iframe=1&wh_pid=/lazada/channel/pk/promotions/sell-on-daraz" target="_blank">SELL ON DARAZ</a>
+                </div>
+                <div class="first-part-container">
+                    <a href="https://buyer-helpcenter.daraz.pk/s/page?spm=a2a0e.searchlist.header.5.24d71a41KDeybG" target="_blank">HELP & SUPPORT</a>
+                </div>
+                <div class="first-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.tm80335142.search.2.35e34076hiC4Yr&q=car&_keyori=ss&from=search_history&sugg=car_0_1#" target="_blank">LOGIN</a>
+                </div>
+                <div class="first-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.tm80335142.search.2.35e34076hiC4Yr&q=car&_keyori=ss&from=search_history&sugg=car_0_1#" target="_blank">SIGNUP</a>
+                </div>
+                <div class="first-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.tm80335142.search.2.35e34076hiC4Yr&q=car&_keyori=ss&from=search_history&sugg=car_0_1#:~:text=SIGN%20UP-,%D8%B2%D8%A8%D8%A7%D9%86%20%D8%AA%D8%A8%D8%AF%DB%8C%D9%84%20%DA%A9%D8%B1%DB%8C%DA%BA,-SEARCH" target="_blank">زبان تبدیل کریں</a>
+                </div>
+            </div>
+            <div class="second-part">
+                <div class="second-part-continer-1">
+                    <img src="https://lzd-img-global.slatic.net/us/domino/3b870cb043c7f8a9741cbf66329e294e.png">
+                </div>
+                <div class="second-part-continer-2">
+                    <input class="search-bar" placeholder="Search in Daraz">
+                    <button class="search-btn">
+                        <img class="search-logo" src="https://img.icons8.com/?size=100&id=132&format=png&color=FD7E14">  
+                    </button>
+                </div>
+                <div class="second-part-continer-3">
+                    <a class="add-to-cart" href="https://cart.daraz.pk/cart?spm=a2a0e.searchlist.header.dcart.24d71a41oLjBn5" target="_blank"> 
+                        <img class="add-to-cart-logo" src="https://img.icons8.com/?size=100&id=gApPmBfBhHWY&format=png&color=FFFFFF">
+                    </a>
+                </div>
+            </div>
+            <div class="third-part">
+                <div class="third-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.searchlist.search.2.24d71a41frgtzP&q=bags+for+girls&from_searchbox_hotwords=1&clickTrackInfo=matchType--99___wh_pid--___type--cli___scene--diwen___bucket--0___spm_id--hint.hp.sbox___result--bags%20for%20girls___textId--2811450551458282933___score--1.000000___itemId--5___abtest--___pvid--57377a35-f7bf-4e6f-9ef6-a4a57bf4f8e8___voucherId--___scoreChain--0.001000,0.000000,0.000000___algoFeatures--___scm--1007.25945.379337.0___ifMannual--N" target="_blank">
+                        bags for girls
+                    </a>
+                    <span>
+                        |
+                    </span>
+                </div>
+                <div class="third-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.searchlist.search.2.24d71a41frgtzP&q=bags+for+girls&from_searchbox_hotwords=1&clickTrackInfo=matchType--99___wh_pid--___type--cli___scene--diwen___bucket--0___spm_id--hint.hp.sbox___result--bags%20for%20girls___textId--2811450551458282933___score--1.000000___itemId--5___abtest--___pvid--57377a35-f7bf-4e6f-9ef6-a4a57bf4f8e8___voucherId--___scoreChain--0.001000,0.000000,0.000000___algoFeatures--___scm--1007.25945.379337.0___ifMannual--N" target="_blank">
+                        water bottle
+                    </a>
+                    <span>
+                        |
+                    </span>
+                </div>
+                <div class="third-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.searchlist.search.2.24d71a41frgtzP&q=bags+for+girls&from_searchbox_hotwords=1&clickTrackInfo=matchType--99___wh_pid--___type--cli___scene--diwen___bucket--0___spm_id--hint.hp.sbox___result--bags%20for%20girls___textId--2811450551458282933___score--1.000000___itemId--5___abtest--___pvid--57377a35-f7bf-4e6f-9ef6-a4a57bf4f8e8___voucherId--___scoreChain--0.001000,0.000000,0.000000___algoFeatures--___scm--1007.25945.379337.0___ifMannual--N" target="_blank">
+                        smart watch
+                    </a>
+                    <span>
+                        |
+                    </span>
+                </div>
+                <div class="third-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.searchlist.search.2.24d71a41frgtzP&q=bags+for+girls&from_searchbox_hotwords=1&clickTrackInfo=matchType--99___wh_pid--___type--cli___scene--diwen___bucket--0___spm_id--hint.hp.sbox___result--bags%20for%20girls___textId--2811450551458282933___score--1.000000___itemId--5___abtest--___pvid--57377a35-f7bf-4e6f-9ef6-a4a57bf4f8e8___voucherId--___scoreChain--0.001000,0.000000,0.000000___algoFeatures--___scm--1007.25945.379337.0___ifMannual--N" target="_blank">
+                        watch for boys
+                    </a>
+                    <span>
+                        |
+                    </span>
+                </div>
+                <div class="third-part-container">
+                    <a href="https://www.daraz.pk/catalog/?spm=a2a0e.searchlist.search.2.24d71a41frgtzP&q=bags+for+girls&from_searchbox_hotwords=1&clickTrackInfo=matchType--99___wh_pid--___type--cli___scene--diwen___bucket--0___spm_id--hint.hp.sbox___result--bags%20for%20girls___textId--2811450551458282933___score--1.000000___itemId--5___abtest--___pvid--57377a35-f7bf-4e6f-9ef6-a4a57bf4f8e8___voucherId--___scoreChain--0.001000,0.000000,0.000000___algoFeatures--___scm--1007.25945.379337.0___ifMannual--N" target="_blank">
+                        laptop
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

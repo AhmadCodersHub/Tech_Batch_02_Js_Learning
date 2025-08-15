@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Candidate - TNX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9e1b32;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 100%;
+            max-width: 300px;
+            background-color: white;
+            padding: 35px;
+            border-radius: 8px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="date"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-select-centers {
+            background-color: #9e1b32;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .btn-select-centers:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-container {
+            width: 100%;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-list {
+            position: absolute;
+            background-color: white;
+            max-height: 150px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1000;
+            display: none;
+        }
+
+        .dropdown-list div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-list div:hover {
+            background-color: #f1f1f1;
+        }
+
+        .selected-centers {
+            font-size: 14px;
+        }
+
+        .remove-center-btn {
+            background-color: #b71c1c;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .remove-center-btn:hover {
+            background-color: #9e1b32;
+        }
+
+        .btn-save {
+            /* display: none; */
+            background-color: #9e1b32;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .btn-save:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Add Candidate</h1>
+
+    <form id="addCandidateForm">
+        <!-- Licence Number -->
+        <label for="licenceNumber">Licence Number:</label>
+        <input type="text" id="licenceNumber" name="licenceNumber" maxlength="16" required>
+        <div class="small-text">It is really important you get this correct, please double check.</div>
+
+        <!-- Theory Number -->
+        <label for="theoryNumber">Theory Number:</label>
+        <input type="text" id="theoryNumber" name="theoryNumber" maxlength="9" required>
+        <div class="small-text">Always add if you have it.</div>
+
+        <!-- Earliest Test Date -->
+        <label for="testDate">Earliest Test Date:</label>
+        <input type="date" id="testDate" name="testDate" required>
+        <div class="small-text">This must be at least 10 WORKING DAYS gap after a previous test.</div>
+
+        <!-- Centre Selection -->
+        <label for="centres">Which Centres Should We Search For:</label>
+        <input type="text" id="searchBox" placeholder="Type to search for test centres...">
+        <div class="dropdown-container">
+            <div id="dropdownList" class="dropdown-list"></div>
+        </div>
+        <button class="btn-save" id="saveBtn">Save</button>
+    </form>
+
+    
+</body>
+</html>

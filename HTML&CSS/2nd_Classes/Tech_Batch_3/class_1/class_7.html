@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .facebook-logo {
+            width: 250px;
+            margin-left: 10px;
+        }
+
+        #title {
+            margin-top: 5px;
+            margin-left: 65px;
+        }
+
+        .password-input,
+        .email-input {
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 250px;
+            height: 33px;
+            padding-left: 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+            border-color: rgb(222, 220, 220);
+        }
+
+        .password-input::placeholder,
+        .email-input::placeholder {
+            font-size: 12px;
+            color: rgb(164, 164, 164);
+        }
+
+        .password-input:focus,
+        .email-input:focus {
+            outline: none;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+            border-color: rgb(40, 130, 241);
+        }
+
+        .login-btn {
+            width: 250px;
+            height: 33px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: rgb(57, 131, 249);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: rgb(27, 102, 222);
+        }
+
+        .info-links {
+            margin-top: 15px;
+            margin-left: 45px;
+            font-size: 6px;
+            color: rgb(149, 148, 148);
+        }
+
+        .signup-link,
+        .forgot-link {
+            font-size: 9px;
+            color: rgb(57, 131, 249);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .signup-link:hover,
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="facebook-logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg">
+    <p id="title">
+        Log in to Facebook
+    </p>
+
+    <input class="email-input" placeholder="Email address or phone number">
+    <p></p>
+    <input class="password-input" placeholder="Password">
+    <p></p> 
+    <button class="login-btn">
+        Log in
+    </button>
+
+    <p class="info-links">
+        <a class="forgot-link" href="https://www.facebook.com/recover/initiate/?ars=facebook_login&cancel_lara_pswd=0">
+            Forgotten account?
+        </a>
+        &#8226
+        <a class="signup-link" href="https://www.facebook.com/r.php?locale=en_GB&display=page">
+            Sign up for Facebook
+        </a>
+    </p>
+
+
+</body>
+
+</html>

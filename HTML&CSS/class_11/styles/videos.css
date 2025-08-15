@@ -1,0 +1,104 @@
+
+
+
+.video-preview {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.video-info-tag {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-thumbnail-tag {
+    position: relative;
+}
+
+.video-time {
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 14px;
+}
+
+.video-thumbnail {
+    width: 100%;
+}
+
+
+.channel-logo-tag {
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.channel-logo {
+    border-radius: 35px;
+    width: 45px;
+}
+
+.video-info {
+    margin-left: 10px;
+}
+
+.video-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;       /* number of lines you want */
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+}
+
+.video-stats,
+.channel-name {
+    font-size: 14px;
+    color: rgb(121, 119, 119);
+    margin-bottom: 5px;
+}
+
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 30px;
+    padding-left: 135px;
+    padding-right: 20px;
+    padding-bottom: 5000px;
+    padding-top: 30px;
+}
+
+
+@media (max-width: 1024px) {
+    .videos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}

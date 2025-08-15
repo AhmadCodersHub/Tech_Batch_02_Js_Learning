@@ -1,0 +1,158 @@
+.header {
+    display: flex;
+    position: fixed; 
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 70px;
+    margin-left: 20px;
+    background-color: white;
+    z-index: 200px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(229, 227, 227);
+}
+
+.header div {
+    display: flex;
+    flex: 1;
+}
+
+.first-part {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    width: 30px;
+    /* height: 80px; */
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+.youtube-logo {
+    /* width: 100px; */
+    height: 28px;
+    margin-left: 25px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+
+.second-part {
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+}
+
+.search-input {
+    height: 45px;
+    flex: 1;
+    font-size: 18px;
+    padding-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(175, 173, 173);
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    max-width: 400px;
+    min-width: 0;
+}
+
+.search-input::placeholder {
+    color: rgb(175, 173, 173);
+}
+
+.search-input:focus {
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    border-radius: 2px;
+}
+
+.search-btn {
+    height: 47px;
+    width: 60px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(175, 173, 173);
+    margin-left: -2px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    cursor: pointer;
+}
+
+.voice-logo,
+.search-logo {
+    width: 24px;
+}
+
+.voice-search-btn {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    background-color: rgb(230, 229, 229);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.third-part {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.notification-btn,
+.youtube-apps-btn,
+.upload-btn {
+    /* height: 40px; */
+    width: 40px;
+    background-color: white;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.profile-logo {
+    width: 55px;
+    margin-left: 30px;
+    margin-right: 10px;
+    
+}
+
+.voice-search-btn,
+.search-btn {
+    position: relative;
+}
+
+.toolbar {
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    background-color: rgb(100, 99, 99);
+    font-size: 14px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.voice-search-btn .toolbar {
+    margin-left: -50px;
+    /* opacity: 1; */
+}
+
+.voice-search-btn:hover .toolbar,
+.search-btn:hover .toolbar {
+    opacity: 1;
+}
